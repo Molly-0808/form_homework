@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F2E02表單練習</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="form_homework.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <form action="" method="get">
+          <!-- 表單題目 -->
+          <div class="F2E02">
+            <h1 style="font-size: 32px">F2E02表單練習</h1>
+            <p style="font-size: 14.6667px; line-height: 2.5">
+              僅供新尖兵 F2E02 表單切版練習作業
+            </p>
+            <hr />
+            <p style="font-size: 14px; line-height: 2.5">
+              <a
+                href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ%2Fviewform%3Ffbzx%3D-260620231660506762&dsh=S-317369778%3A1775898617153384&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AT1y2_WKrVjN4fOhC_OWlsso2Xq1fQqUeh1krZ-DrIlCJKL0lID9tL6mhQLjxlgysmHoGZj7336k"
+                >登入 Google</a
+              >
+              即可儲存進度。
+              <span style="color: #0b57d0">瞭解詳情</span>
+            </p>
+            <hr />
+            <p style="font-size: 14px; color: #db372d; line-height: 2.5">
+              * 表示必填問題
+            </p>
+          </div>
+          <!-- 姓名 -->
+          <div class="look">
+            <p class="titile">姓名<span style="color: #db372d">*</span></p>
+            <br />
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="您的回答"
+              required
+            />
+          </div>
+          <!-- 信箱 -->
+          <div class="look">
+            <p class="titile">信箱<span style="color: #db372d">*</span></p>
+            <br />
+            <input
+              type="text"
+              id="email"
+              name="user_email"
+              placeholder="您的回答"
+              required
+            />
+          </div>
+          <!-- 生日 -->
+          <div class="look">
+            <p class="titile">生日</p>
+            <small>日期</small>
+            <br />
+            <input type="date" id="birthday" name="user_birthday" />
+          </div>
+          <!-- 悄悄話 -->
+          <div class="look">
+            <p class="titile">想跟老師說悄悄話</p>
+            <br />
+            <input
+              type="text"
+              id="talk"
+              name="user_talk"
+              placeholder="您的回答"
+            />
+          </div>
+          <!-- 喜歡的顏色 -->
+          <div class="look">
+            <p class="titile">最喜歡的顏色</p>
+            <input type="radio" name="fav_color" id="yellow" value="最喜歡黃" />
+            <label for="yellow">黃</label>
+            <br />
+            <input type="radio" name="fav_color" id="green" value="最喜歡綠" />
+            <label for="green">綠</label>
+            <br />
+            <input type="radio" name="fav_color" id="red" value="最喜歡紅" />
+            <label for="red">紅</label>
+          </div>
+          <!-- 喜歡吃的飲食類型 -->
+          <div class="look">
+            <p class="titile">喜歡吃的飲食類型</p>
+            <input
+              type="checkbox"
+              name="food"
+              id="chinese_food"
+              value="喜歡中式"
+            />
+            <label for="chinese_food">中式</label>
+            <br />
+            <input
+              type="checkbox"
+              name="food"
+              id="italy_food"
+              value="喜歡義式"
+            />
+            <label for="italy_food">義式</label>
+            <br />
+            <input
+              type="checkbox"
+              name="food"
+              id="japanese_food"
+              value="喜歡日式"
+            />
+            <label for="japanese_food">日式</label>
+            <br />
+            <input
+              type="checkbox"
+              name="food"
+              id="korean_food"
+              value="喜歡韓式"
+            />
+            <label for="korean_food">韓式</label>
+            <br />
+            <input
+              type="checkbox"
+              name="food"
+              id="american_food"
+              value="喜歡美式"
+            />
+            <label for="american_food">美式</label>
+            <br />
+            <input
+              type="checkbox"
+              name="food"
+              id="thai_food"
+              value="喜歡泰式"
+            />
+            <label for="thai_food">泰式</label>
+          </div>
+          <!-- 最想去的國家 -->
+          <div class="look">
+            <p class="title">最想去的國家</p>
+            <select name="country" id="fav_country">
+              <option value="" disabled selected>選擇</option>
+              <optgroup label="亞洲">
+                <option value="最喜歡日本">日本</option>
+                <option value="最喜歡韓國">韓國</option>
+                <option value="最喜歡泰國">泰國</option>
+              </optgroup>
+              <optgroup label="歐洲">
+                <option value="最喜歡英國">英國</option>
+                <option value="最喜歡德國">德國</option>
+              </optgroup>
+              <optgroup label="北美洲">
+                <option value="最喜歡加拿大">加拿大</option>
+                <option value="最喜歡美國">美國</option>
+              </optgroup>
+            </select>
+          </div>
+          <div id="area">
+            <input type="submit" id="submit_look" value="提交" />
+            <input type="reset" id="reset_look" value="清除表單" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>請勿利用 Google 表單送出密碼。</p>
+      <p style="text-align: center">
+        這份表單是在 五倍紅寶石程式資訊教育股份有限公司 中建立。 -聯絡表單擁有者
+        <br />
+        這份表單很可疑嗎？ 報告
+      </p>
+      <div>
+        <a
+          href="https://workspace.google.com/products/forms/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms"
+          target="_blank"
+        >
+          <img
+            src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg"
+            alt="google_logo"
+          />
+        </a>
+        <p><span style="font-size: 22px">表單</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
