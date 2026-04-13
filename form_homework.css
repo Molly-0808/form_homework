@@ -44,10 +44,24 @@ form {
     color: #0b57d0;
   }
 
-  #area {
+  #subres {
     width: 640px;
     height: auto;
     margin: 0px auto;
+    display: flex;
+    align-items: center;
+  }
+
+  #sub {
+    width: 320px;
+    height: auto;
+    margin-left: 0px;
+  }
+
+  #res {
+    width: 320px;
+    height: auto;
+    margin-left: 480px;
   }
 
   #submit_look {
@@ -68,5 +82,16 @@ footer {
   height: auto;
   margin: 12px auto;
   font-size: 12px;
+  line-height: 2;
+}
+
+#google {
+  width: 640px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px auto;
+  font-size: 22.1px;
   line-height: 2;
 }
