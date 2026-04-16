@@ -97,6 +97,7 @@ footer {
 }
 
 #clear_radio {
+  color: gray;
   display: none;
   cursor: pointer; /*讓鼠標變成手套*/
 }
@@ -104,4 +105,9 @@ footer {
 .clear_right {
   display: flex; /* 開啟彈性佈局 */
   justify-content: flex-end;
+}
+
+#textarea_look {
+  width: 550px;
+  height: 70px;
 }
