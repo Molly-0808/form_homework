@@ -6,6 +6,7 @@
     <title>F2E02表單練習</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="form_homework.css" />
+    <script defer src="form_homework.js"></script>
   </head>
   <body>
     <main>
@@ -33,7 +34,7 @@
           </div>
           <!-- 姓名 -->
           <div class="look">
-            <p class="titile">姓名<span style="color: #db372d">*</span></p>
+            <p class="title">姓名<span style="color: #db372d">*</span></p>
             <br />
             <input
               type="text"
@@ -45,10 +46,10 @@
           </div>
           <!-- 信箱 -->
           <div class="look">
-            <p class="titile">信箱<span style="color: #db372d">*</span></p>
+            <p class="title">信箱<span style="color: #db372d">*</span></p>
             <br />
             <input
-              type="text"
+              type="email"
               id="email"
               name="user_email"
               placeholder="您的回答"
@@ -57,37 +58,37 @@
           </div>
           <!-- 生日 -->
           <div class="look">
-            <p class="titile">生日</p>
+            <p class="title">生日</p>
             <small>日期</small>
             <br />
             <input type="date" id="birthday" name="user_birthday" />
           </div>
           <!-- 悄悄話 -->
           <div class="look">
-            <p class="titile">想跟老師說悄悄話</p>
+            <p class="title">想跟老師說悄悄話</p>
             <br />
-            <input
-              type="text"
-              id="talk"
-              name="user_talk"
-              placeholder="您的回答"
-            />
+            <textarea name="user_talk" placeholder="您的回答"></textarea>
           </div>
           <!-- 喜歡的顏色 -->
           <div class="look">
-            <p class="titile">最喜歡的顏色</p>
-            <input type="radio" name="fav_color" id="yellow" value="最喜歡黃" />
+            <p class="title">最喜歡的顏色</p>
+            <input type="radio" name="fav_color" id="yellow" value="黃" />
             <label for="yellow">黃</label>
             <br />
-            <input type="radio" name="fav_color" id="green" value="最喜歡綠" />
+            <input type="radio" name="fav_color" id="green" value="綠" />
             <label for="green">綠</label>
             <br />
-            <input type="radio" name="fav_color" id="red" value="最喜歡紅" />
+            <input type="radio" name="fav_color" id="red" value="紅" />
             <label for="red">紅</label>
+            <br />
+
+            <div class="clear_right">
+              <button type="button" id="clear_radio">清除選取的項目</button>
+            </div>
           </div>
           <!-- 喜歡吃的飲食類型 -->
           <div class="look">
-            <p class="titile">喜歡吃的飲食類型</p>
+            <p class="title">喜歡吃的飲食類型</p>
             <input
               type="checkbox"
               name="food"
